@@ -1,0 +1,40 @@
+.svg-icon {
+    padding: 0.5em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: white;
+}
+
+.svg-icon circle {
+    stroke: white;
+    stroke-width: 1;
+}
+
+footer {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #50757a;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}

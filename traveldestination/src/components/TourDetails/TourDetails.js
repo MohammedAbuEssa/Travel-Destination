@@ -2,6 +2,8 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import Header from '../header/Header';
 import { useState } from 'react';
+import Footer from '../footer/Footer';
+import './TourDetails.css'
 const cityArray= require('../../data/db');
 function TourDetails() {
 const [showFull, setShowFull]=useState(false);
@@ -28,17 +30,17 @@ return result;
   return (
     <>
 <Header/>
+<div className='Card'>
     <h3>{city[0].name}</h3>
     <img src={city[0].image}/>
-    <div>
-      <p>{displayText}</p>
-      {description.length > maxLength && (
-        <button onClick={toggle}>
-          {showFull ? 'Show less' : 'Show more'}
-        </button>
+    <div >
+      <p className='Info'>{displayText}</p>{description.length > maxLength && (<button onClick={toggle}>{showFull ? 'Show less' : 'Show more'}</button>
+      
       )}
     </div>
-    <p>{city[0].price}</p>
+    <p className='price'>{city[0].price} $</p>
+    </div>
+    <Footer/>
     </>
     
   )

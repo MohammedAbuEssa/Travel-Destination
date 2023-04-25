@@ -1,3 +1,7 @@
 h1 {
     background-color: #50757a;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 2rem;
 }

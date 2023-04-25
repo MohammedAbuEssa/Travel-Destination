@@ -1,0 +1,19 @@
+.Card {
+    border-color: #50757a;
+    border-style: solid;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.AllCards {
+    display: flex;
+    flex-flow: column;
+}
+
+img {
+    height: 35rem;
+    width: 37rem;
+}

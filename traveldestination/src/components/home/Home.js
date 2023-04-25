@@ -1,18 +1,25 @@
 import React from 'react'
 import Header from '../header/Header';
 import Tours from '../tours/Tours';
+import { Routes,Route } from 'react-router-dom';
 import Footer from '../footer/Footer';
-const data = require('../../data/db.json');
+const tour = require('../../data/db');
+
+
 
  function Home() {
   return (
     <>
     <Header/>
-<Tours arrayData={data}/>
-<Footer/>
+    {/* <Routes>
+    <Route path='/tourDetails' element={<Tours/>} />
+    </Routes> */}
+    <Tours tour={tour} />
+    <Footer/>
     </>
   )
 }
 
 
 export default Home;
+
